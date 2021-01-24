@@ -1,0 +1,82 @@
+@media only screen and (max-width: 680px) {
+    #prawe_menu { display: none; }
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+body {
+	margin: 0px;
+	background:black;
+	background-size: cover;
+	color:white;
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+	overflow:hidden;
+}
+
+.filtr-background {
+	width:100%;
+	height:100%;
+	background: transparent url('background.png') fixed no-repeat center center;
+	background-size: cover;
+	z-index:10;
+}
+
+.bg-video {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+}
+
+.main {
+	padding-top:17%;
+	width:100%;
+	height:100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.button {
+	display: inline-block;
+	color:white;
+	background:rgba(0, 0, 0, 0);
+	width:150px;
+	padding:10px;
+	margin-left: auto;
+	margin-right: auto;
+    -webkit-border-radius: 50px;
+    -khtml-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+	border: 1px solid white;
+}
+
+.button:hover {
+	background:#90c0db;
+	color:black;
+	transition-duration: 0.4s;
+	-webkit-box-shadow: 3px 3px 30px 5px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 3px 3px 30px 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 3px 3px 30px 5px rgba(0, 0, 0, 0.3);
+	border: 1px solid #90c0db;
+}
+
+h1{
+	font-size:20px;
+	font-weight:normal;
+}
+
+a:link    { color: white; text-decoration: none; }
+a:visited { color: white; }
+a:active  { color: white; }
+a:hover   { color: #90c0db; text-decoration: none; }
+

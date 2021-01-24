@@ -1,0 +1,429 @@
+/*
+Theme Name: Otoedu
+Author: Marek Trocha
+Version: 1.0
+Date: 06.01.2021
+*/
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(http://trocha.net.pl/otoedu/wordpress/wp-content/themes/marektrocha/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-ExtraBold;
+  src: url(http://trocha.net.pl/otoedu/wordpress/wp-content/themes/marektrocha/fonts/Montserrat-ExtraBold.ttf);
+}
+
+body {
+  background: #fff;
+}
+
+header {
+  background: #fff;
+  width: 100%;
+  height: 100px;
+}
+
+@media (min-width: 576px) {
+
+  .frontendImageLeft {
+    float: left;
+  }
+
+  .frontendImageRight {
+    float: right;
+  }
+
+  h1 {
+    font-family: Montserrat-ExtraBold;
+    font-size: 25px;
+    padding: 50px 0px 25px 0px;
+  }
+  
+  h2 {
+    font-family: Montserrat-Regular;
+    font-size: 25px;
+  }
+  
+  h3 {
+    font-family: Montserrat-Regular;
+    font-size: 12px;
+    line-height: 1.8;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  
+  h4 {
+    font-family: Montserrat-Regular;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ffc400;
+  }
+
+  .frontendTextAbout {
+    position: relative;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 450px;
+    padding-top: 100px;
+  }
+
+  .hr { display: none; }
+
+}
+
+@media (max-width: 575.98px) {
+
+  .mr-auto {
+    margin-left: 10px;
+  }
+
+  .nav-link {
+    background-color: #fafcfd;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  
+  .img-fluid { 
+    max-width: 100%;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  h1 { 
+    font-family: Montserrat-ExtraBold;
+    font-size: 25px;
+    padding: 0px 5px 15px 5px;
+  }
+
+  h2 {
+    font-family: Montserrat-Regular;
+    font-size: 25px;
+  }
+
+  h3 {
+    font-family: Montserrat-Regular;
+    font-size: 12px;
+    line-height: 1.8;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  h4 {
+    font-family: Montserrat-Regular;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #ffc400;
+  }
+
+  .frontendText { 
+    max-width: 100%;  
+  }
+
+  .input-group {
+    max-width: 100%;
+  }
+
+  .custom-select {
+    max-width: 100px;
+  }
+
+  .selected {
+    all: unset;
+    float: left;
+  }
+
+  .frontendEvent { 
+    clear: both; 
+  }
+
+  .frontendTextAbout {
+    position: relative;
+    float: left;
+    text-align: left;
+    width: 330px;
+  }
+
+  .imageAbout1 {
+    position: absolute;
+    width: 60%;
+    opacity: 0;
+  }
+
+  .imageAbout2 {
+    right: 0px;
+    position: absolute;
+    width: 60%;
+    opacity: 0;
+  }
+
+  
+  .otoedu_navigation { display: none; }
+  .otoeduButton { display: none; }
+  .otoeduButton:active { display: none; }
+  .otoeduLabel { display: none; }
+  .otoeduLabel:hover { display: none; }
+  .otoeduButtonWhite { display: none; }
+  .otoeduButtonWhite:active { display: none; }
+  .otoeduLabelWhite { display: none; }
+  .otoeduLabelWhite:hover { display: none; }
+  .imageEvent { display: none; }
+  .elementOnImageEvent { display: none; }
+  .title { display: none; }
+
+}
+
+
+@media (min-width: 768px) {
+
+  .otoedu-d-flex {
+    display: flex;
+  }
+  
+}
+
+@media (max-width: 767.98px) {
+ 
+  .otoedu-d-flex {
+    display: inline-block;
+  }
+
+  .imageAbout1 { display: none; }
+  .imageAbout2 { display: none; }
+  
+}
+
+.blog {
+  float: left;
+}
+
+.title {
+  font-family: Montserrat-ExtraBold;
+  font-size: 25px;
+  padding: 50px 0px 25px 0px;
+}
+
+.otoedu_navigation {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.containerLogin {
+  position: relative;
+  width: 100%;
+}
+  
+.imageLogin {
+  display: block;
+  min-width: 100%;
+}
+  
+.overlayLogin {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 95%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+  
+.containerLogin:hover .overlayLogin {
+  opacity: 1;
+}
+  
+.textLogin {
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.frontend {
+  clear: both;
+  width: 100%;
+}
+
+.frontendBlock {
+  clear: both;
+  width: 100%;
+  color: white;
+  background: linear-gradient(to right, #003150 0%, #0062a0 100%);
+}
+
+.frontendText {
+  text-align: left;
+  width: 420px;
+  float: left;
+  padding: 60px 10px 10px 10px;
+}
+
+.frontendEvent {
+  text-align: left;
+  width: 500px;
+  float: left;
+  padding: 20px 10px 10px 10px;
+}
+
+.frontendSearch {
+  text-align: left;
+}
+
+.otoeduButton {
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.6rem 2.2rem;
+  text-decoration: none;
+  margin: 10px;
+  background: linear-gradient(to right, #003150 0%, #0062a0 100%);
+  border: 1px solid #0062a0;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+}
+
+.otoeduButton:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  /* box-shadow: 0px 1px 0px 0px */
+}
+
+.otoeduLabel {
+  background-color: #0062a0;
+  /* box-shadow: 3px 5px 5px #888888; */
+  border-radius: 5px;
+  transition: all .5s ease-in-out
+}
+
+.otoeduLabel:hover {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 50px;
+  transform: scale(1.1)
+}
+
+.otoeduButtonWhite {
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.6rem 2.2rem;
+  text-decoration: none;
+  margin: 10px;
+  background: linear-gradient(to right, #fff 0%, #fff 100%);
+  border: 1px solid #0062a0;
+  color: #0062a0;
+  position: relative;
+  display: inline-block;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.otoeduButtonWhite:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  /* box-shadow: 0px 1px 0px 0px */
+}
+
+.otoeduLabelWhite {
+  background-color: #3f4447;
+  /* box-shadow: 3px 5px 5px #888888; */
+  border-radius: 5px;
+  transition: all .5s ease-in-out
+}
+
+.otoeduLabelWhite:hover {
+  background-color: #000;
+  color: #0062a0;
+  padding: 20px 50px;
+  transform: scale(1.1)
+}
+
+.elementOnImageLogo {
+  background-color: #0062a0;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 30px;
+  border-bottom-right-radius: 5px;
+}
+
+.elementOnImageEvent {
+  background-color: #e6b100;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  border-bottom-right-radius: 5px;
+}
+
+.elementOnImageDate {
+  background-color: #0062a0;
+  width: 150px;
+  text-align: center;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 12px;
+  border-bottom-right-radius: 5px;
+}
+
+.scoreBox {
+  float: left;
+  margin-right: 10px;
+  background-color: #d5e5ef;
+  color: #0062a0;
+  font-size: 12px;
+  width: 120px;
+  padding: 7px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.parts {
+  width: 80px;
+  border-bottom: 1px solid #0062a0;
+}
+
+.aos-all {
+  width: 1000px;
+  max-width: 98%;
+  margin: 10vh auto 0 auto;
+}
+
+.aos-item {
+  display: inline-block;
+}
+
+.aos-item__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  float: left;
+  background: #1da4e2;
+  line-height: 260px;
+  text-align: center;
+  color: #fff;
+}

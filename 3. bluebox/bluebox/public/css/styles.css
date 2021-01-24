@@ -1,0 +1,8 @@
+body {
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 15px;
+}
